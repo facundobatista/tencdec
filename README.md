@@ -52,7 +52,7 @@ Multiple bytes:
     1111 0100
     0000 0011
 ```
-- first byte indicates that it goes one, second byte indicates that ends there
+- first byte indicates that it goes on, second byte indicates that ends there
 
 - bits are collected without using the most significant one, in reverse order:
 
