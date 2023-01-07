@@ -60,4 +60,4 @@ Multiple bytes:
     000 0011 111 0100 -> 0000 0001 1111 0100 -> 500 (in decimal)
     ```
 
-This is effectively a VarInt, without any limitation on the maximum length for a sequence of bits. That is, you can encode numbers larger than 64 or 128 bit using tencdec and pythons handling of integers takes care of extending the bits as needed for each number.
+This is effectively a VarInt, without any limitation on the maximum length for a sequence of bits. That is, any sequence of monotonic increasing numbers can be  encoded with tencdec, regardless of bit-length. The delta calculation between each pair of numbers, and the variable-length quantity encoding efficiently encode the sequence to bytes.
